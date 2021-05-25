@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Trickster-Reg';
+  src: url('fonts/Trickster-Reg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Moche-Regular.ttf';
+  src: url('fonts/Moche-Regular.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
 h1 {
-  color: red;
+  font-family: 'Trickster-Reg';
+  font-size: 3em;
+  color: black;
+}
+
+video {
+  max-width:100%;
+  height: auto;
 }
