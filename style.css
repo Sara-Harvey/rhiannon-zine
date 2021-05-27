@@ -157,7 +157,8 @@ header .main-nav a {
   }
   
   .main-nav {  
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    font-size: 1.75em;
   }  
     
   .main-nav > li {  
