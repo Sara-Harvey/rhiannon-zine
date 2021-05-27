@@ -155,12 +155,11 @@ header .main-nav a {
   .container header {
     padding: 0px 40px 0px 40px;
   }
-  .main-nav {  
+  header .main-nav {  
     flex-wrap: wrap;
-    flex-basis: 100%;
   }  
     
-  /*.main-nav > li {  
+  header .main-nav > li {  
     flex-basis: 100%;  
-  }*/
+  }
 }
