@@ -158,7 +158,7 @@ audio:hover {
 }
 
 .about-text {
-  margin: 100px 100px 100px 100px;
+  margin: 40px;
 }
 
 @media(max-width: 798px) {
