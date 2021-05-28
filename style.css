@@ -67,20 +67,27 @@ h1 {
 }
 
 h1:hover {
-  opacity: 75%;
-  transition: opacity 400ms;
+  color: lightgray;
+  text-shadow: 2px 2px black;
+  transform: translateY(1px);
+  transition: transform 300ms;
 }
 
 header .main-nav {
   display: flex;
+  padding-right: 10px;
 }
 
-header .main-nav a {
-  font-family: 'Trickster-Reg', sans-serif;
-  padding-right: 10px;
-  font-size: 2.5em;
+header .main-nav li {
+  font-size: 1.75em;
   color: gray;
+  flex: 1; 
 }
+
+audio:hover {
+ transform: translateY(1px);
+  transition: transform 300ms;
+} 
 
 .carousel {
   position: relative;
@@ -110,6 +117,10 @@ header .main-nav a {
   opacity: 80%;
   transform: translateY(-3.5px);
   transition: transform 250ms, opacity 400ms;
+}
+
+.slide img:hover {
+  filter: invert(100%);
 }
 
 .nav {
@@ -150,18 +161,15 @@ header .main-nav a {
   margin: 100px 100px 100px 100px;
 }
 
-@media(max-width: 600px /*798px*/) {
+@media(max-width: 798px) {
   .container,
   .container header {
     padding: 0px 40px 0px 40px;
   }
-  
+
   .main-nav {  
     flex-wrap: wrap;
-    font-size: 1.75em;
-  }  
-    
-  .main-nav > li {  
-    flex-basis: 100%;  
-  }
+    flex-basis: 100%;
+    flex: 1; 
+  } 
 }
