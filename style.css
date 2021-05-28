@@ -114,7 +114,6 @@ audio:hover {
 }
 
 .slide:hover {
-  opacity: 80%;
   transform: translateY(-3.5px);
   transition: transform 250ms, opacity 400ms;
 }
