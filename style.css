@@ -19,9 +19,6 @@
 
 a {
   text-decoration: none;
-}
-
-a:link {
   color: darkgray;
 }
 
@@ -86,6 +83,11 @@ header .main-nav li {
   color: gray;
   padding-right: 20px;
   flex: 1; 
+}
+
+header .main-nav a {
+  font-size: 1em;
+  color: gray;
 }
 
 audio:hover {
