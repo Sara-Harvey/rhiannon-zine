@@ -82,7 +82,7 @@ header .main-nav {
 }
 
 header .main-nav li {
-  font-size: 1.75em;
+  font-size: 1em;
   color: gray;
   padding-right: 20px;
   flex: 1; 
