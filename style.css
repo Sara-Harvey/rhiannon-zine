@@ -33,22 +33,18 @@ ul {
 
 .container {
   position: absolute;
-  /*top: 10px; */
   right: 0;
   width: 100%;
   min-height: 100vh;
   padding-left: 50px;
+  z-index: 2;
   
-  /* aligns elements */
-  display: flex;
-  justify-content: space-between;
-
-  /* flexbox: aligning vertically */
-  align-items: center;
   background: white;
   background-size: cover;
-  transition: 0.5s;
-  z-index: 2;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container header {
@@ -58,9 +54,9 @@ ul {
   width: 100%;
   padding: 0px 50px 0px 50px;
   z-index: 100;
+
   display: flex;
-  align-items: center;
-  /*flex-wrap: wrap;*/
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -78,13 +74,17 @@ h1:hover {
 }
 
 header .main-nav {
+  top: 2.5%;
   display: flex;
-  padding-right: 10px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px 10px 0px 0px;
 }
 
 header .main-nav li {
   font-size: 1.75em;
   color: gray;
+  padding-right: 20px;
   flex: 1; 
 }
 
