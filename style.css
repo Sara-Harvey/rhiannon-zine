@@ -62,7 +62,7 @@ ul {
 .big-name-graphic {
   animation: 2s ease-out .05s 1 slideInFromLeft;
   font-family: 'Trickster-Reg', sans-serif;
-  font-size: 13em;
+  font-size: 11em;
   opacity: 0;
   margin: 0;
   padding: 0;
@@ -112,7 +112,7 @@ ul {
     transform: translateX(-50%);
     background: white;
     border:2px solid white;
-    box-shadow: 0 30px 50px rgba(255,0,0,.2);
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
   }
 
   100% {
@@ -129,7 +129,7 @@ ul {
 }
 
 .overlay .moon-animation {
-    animation: 3.5s ease-out 0s 1 moonAppears;
+    animation: 2.75s ease-out 0s 1 moonAppears;
     animation-delay: 2s;
     position: absolute;
     top: 0;
@@ -154,7 +154,7 @@ ul {
 }
 
 .overlay .stars-appear  {
-  animation: 3.25s ease-out 0s 1 starsAppear;
+  animation: 2.50s ease-out 0s 1 starsAppear;
   animation-delay: 2.25s;
   position: absolute;
   right: 0;
@@ -183,7 +183,7 @@ h1 {
 }
 
 h1:hover {
-  color: lightgray;
+  color: #F1F3F4;
   text-shadow: 2px 2px black;
   transform: translateY(1px);
   transition: transform 300ms;
@@ -204,9 +204,17 @@ header .main-nav li {
   flex: 1; 
 }
 
+
+audio {
+  border: solid black 2px;
+  border-radius: 25px;
+  box-shadow: 3px 5px #C1C2C3;
+}
+
 audio:hover {
-  transform: translateY(1px);
-  transition: transform 300ms;
+  transform: translateY(1.5px);
+  transition: transform 100ms;
+  box-shadow: none;
 } 
 
 .carousel {
@@ -246,15 +254,15 @@ audio:hover {
   position: absolute;
   top: 50%;
   margin-top: -10px;
-  
+
   background-color: rgba(150,150,150,.3);
   width: 20px;
   height: 20px;
   z-index: 5;
   cursor: pointer;
   border-radius: 50%;
-  border: none;
-  outline: none;
+  border: solid black 2px;
+
   -webkit-user-select: none;
 }
 
@@ -287,7 +295,7 @@ audio:hover {
   }
 
   .big-name-graphic {
-    visibility: hidden;
+    font-size 2em;
   }
 
   .main-nav {  
