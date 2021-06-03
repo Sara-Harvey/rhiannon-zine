@@ -299,7 +299,7 @@ audio:hover {
   }
   
 .big-name-graphic {
-  opacity: 0;
+  opacity: 0 !important;
   z-index: 3;
 }
 
