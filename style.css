@@ -290,7 +290,7 @@ audio:hover {
 @media(max-width: 798px) {
   .container,
   .container header {
-    padding: 0px 50px 0px 50px;
+    padding: 0px 30px 0px 30px;
   }
 
    audio {
@@ -300,6 +300,7 @@ audio:hover {
   
 .big-name-graphic {
   opacity: 0 !important;
+  visible: false !important;
   z-index: 3;
 }
 
