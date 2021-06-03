@@ -298,13 +298,8 @@ audio:hover {
     box-shadow: none;
   }
   
-  
 .big-name-graphic {
-  font-family: 'Trickster-Reg', sans-serif;
-  font-size: 11em;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
+  display: none;
   z-index: 3;
 }
 
