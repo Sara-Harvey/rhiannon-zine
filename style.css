@@ -414,3 +414,8 @@ audio {
   border: none;
   box-shadow: none;
 }
+
+.carousel {
+  display: flex;
+  justify-content: space-around;  
+}
