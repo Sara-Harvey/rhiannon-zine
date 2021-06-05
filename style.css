@@ -288,119 +288,119 @@ audio:hover {
 }
 
 
-
 @media(max-width: 798px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 40px 0px 40px;
-  }
-  
+  .container,
   .container header {
-    display: flex;
-    flex-direction: column;
-    line-height: 80%;
+    padding: 0px 30px 0px 30px;
   }
-  
+
    audio {
     border: none;
     box-shadow: none;
   }
   
-  .big-name-graphic {
-    color: black;
-    z-index: 3;
+.big-name-graphic {
+  opacity: 0 !important;
+  visible: false !important;
+  z-index: 3;
+}
+
+@keyframes overlayDisappears {
+  0% {
+    z-index: 800;
+    background: black;
+    opacity: 1;
+  }
+  100% {
+    z-index: 800;
+    background: black;
+    opacity: 1;
+  }
+}
+
+.overlay {
+  animation: 2.5s ease-out 0s 1 overlayDisappears;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+}
+
+@keyframes moonAppears {
+  0% { 
+    z-index: 900;
   }
 
-  @keyframes overlayDisappears {
-    0% {
-      z-index: 800;
-      background: black;
-      opacity: 1;
-    }
-    100% {
-      z-index: 800;
-      background: black;
-      opacity: 1;
-    }
+  10% {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border:2px solid white;
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
   }
 
-  .overlay {
-    animation: 2.5s ease-out 0s 1 overlayDisappears;
+  100% {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border:2px solid white;
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
+  }
+}
+
+.overlay .moon-animation {
+    animation: 2s ease-out 0s 1 moonAppears;
+    animation-delay: .5s;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
-    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    opacity: 0;
-  }
-
-  @keyframes moonAppears {
-    0% { 
-      z-index: 900;
-    }
-
-    10% {
-      height: 60px;
-      width: 60px;
-      border-radius: 50%;
-      top: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      border:2px solid white;
-      box-shadow: 0 30px 50px rgba(0,0,0,.2);
-    }
-
-    100% {
-      height: 80px;
-      width: 80px;
-      border-radius: 50%;
-      top: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: white;
-      border:2px solid white;
-      box-shadow: 0 30px 50px rgba(0,0,0,.2);
-    }
-  }
-
-  .overlay .moon-animation {
-      animation: 2s ease-out 0s 1 moonAppears;
-      animation-delay: .5s;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 2;
-  }
-
-  @keyframes starsAppear {
-    0% {
-      opacity: 0;
-      z-index: 900;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .overlay .stars-appear  {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
     z-index: 2;
+}
+
+@keyframes starsAppear {
+  0% {
     opacity: 0;
+    z-index: 900;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.overlay .stars-appear  {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 2;
+  opacity: 0;
+}
+  
+  .main-nav {  
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex: 1; 
+  }  
+}
