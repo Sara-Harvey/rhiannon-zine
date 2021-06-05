@@ -298,10 +298,23 @@ audio:hover {
     display: none;
   }
 
- audio {
-  border: none;
-  box-shadow: none;
-}
+  .overlay {
+    animation: 2.5s ease-out 0s 1 overlayDisappears;
+  }
+
+  .overlay .moon-animation {
+      animation: 2s ease-out 0s 1 moonAppears;
+      animation-delay: .5s;
+  }
+
+  .overlay .stars-appear  {
+    display: none;
+  }
+
+  audio {
+    border: none;
+    box-shadow: none;
+  }
   
   .main-nav {  
     flex-wrap: wrap;
