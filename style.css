@@ -295,9 +295,14 @@ audio:hover {
   }
 
   .big-name-graphic {
-    font-size 2em;
+    display: none;
   }
 
+ audio {
+  border: none;
+  box-shadow: none;
+}
+  
   .main-nav {  
     flex-wrap: wrap;
     flex-basis: 100%;
