@@ -287,24 +287,20 @@ audio:hover {
   margin: 50px;
 }
 
-
 @media(max-width: 798px) {
-  .container {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-size: cover;
-    z-index: 4;
+  .container,
+  .container header {
+    padding: 0px 30px 0px 30px;
+  }
+
+   audio {
+    border: none;
+    box-shadow: none;
   }
   
 .big-name-graphic {
-  display: none !important;
-  color: black !important;
+  opacity: 0 !important;
+  visible: false !important;
   z-index: 3;
 }
 
@@ -334,8 +330,7 @@ audio:hover {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  display: none !important;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 @keyframes moonAppears {
@@ -382,40 +377,28 @@ audio:hover {
     z-index: 2;
 }
 
+@keyframes starsAppear {
+  0% {
+    opacity: 0;
+    z-index: 900;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .overlay .stars-appear  {
   position: absolute;
   right: 0;
   width: 100%;
   min-height: 100vh;
   z-index: 2;
-  display: none;
-  /* opacity: 0; */
+  opacity: 0;
 }
   
-.container header {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-}  
-  
-.main-nav {  
-  display: flex;
-  flex-direction: column;
-}
-
-header .main-nav li {
-  font-size: 1.75em;
-  color: gray;
-  /*padding-right: 20px;*/
-  flex: 1; 
-}
-  
-audio {
-  border: none;
-  box-shadow: none;
-}
-
-.carousel {
-  display: flex;
-  justify-content: space-around;
-}
+  .main-nav {  
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex: 1; 
+  }  
