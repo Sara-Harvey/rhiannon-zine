@@ -64,7 +64,7 @@ ul {
 }
 
 .big-name-graphic {
-  animation: 2s ease-out .05s 1 slideInFromLeft;
+  animation: 2s linear .05s 1 slideInFromLeft;
   font-family: 'Trickster-Reg', sans-serif;
   font-size: 11em;
   opacity: 0;
@@ -87,7 +87,7 @@ ul {
 }
 
 .overlay {
-  animation: 5.5s ease-out 0s 1 overlayDisappears;
+  animation: 5.5s linear 0s 1 overlayDisappears;
   position: absolute;
   top: 0;
   left: 0;
@@ -133,7 +133,7 @@ ul {
 }
 
 .overlay .moon-animation {
-    animation: 2.75s ease-out 0s 1 moonAppears;
+    animation: 2.75s linear 0s 1 moonAppears;
     animation-delay: 2s;
     position: absolute;
     top: 0;
@@ -158,7 +158,7 @@ ul {
 }
 
 .overlay .stars-appear  {
-  animation: 2.50s ease-out 0s 1 starsAppear;
+  animation: 2.50s linear 0s 1 starsAppear;
   animation-delay: 2.25s;
   position: absolute;
   right: 0;
@@ -303,11 +303,11 @@ audio:hover {
   }
 
   .overlay {
-    animation: 2.5s ease-out 0s 1 overlayDisappears;
+    animation: 2.5s linear 0s 1 overlayDisappears;
   }
 
   .overlay .moon-animation {
-      animation: 2s ease-out 0s 1 moonAppears;
+      animation: 2s linear 0s 1 moonAppears;
       animation-delay: .5s;
   }
 
