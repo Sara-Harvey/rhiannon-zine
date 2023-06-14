@@ -296,14 +296,13 @@ audio:hover {
   .container,
   .container header {
     padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
   }
 
   .big-name-graphic {
     display: none;
   }
-  header .main-nav {
-    flex-direction: column;
-  }  
   .overlay {
     animation: 2.5s linear 0s 1 overlayDisappears;
   }
