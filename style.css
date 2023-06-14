@@ -47,7 +47,7 @@ ul {
   background-size: cover;
   z-index: 4;
 }
-/*
+
 @keyframes slideInFromLeft {
   0% { 
     color: white;
@@ -62,7 +62,7 @@ ul {
     transform: translateX(0);
   }
 }
-*/
+
 .big-name-graphic {
   animation: 2s linear .05s 1 slideInFromLeft;
   font-family: 'Trickster-Reg', sans-serif;
@@ -72,7 +72,7 @@ ul {
   padding: 0;
   z-index: 3;
 }
-/*
+
 @keyframes overlayDisappears {
   0% {
     z-index: 800;
@@ -85,7 +85,7 @@ ul {
     opacity: 1;
   }
 }
-*/
+
 .overlay {
   animation: 5.5s linear 0s 1 overlayDisappears;
   position: absolute;
@@ -101,7 +101,7 @@ ul {
   z-index: 1;
   opacity: 0;
 }
-/*
+
 @keyframes moonAppears {
   0% { 
     z-index: 900;
@@ -131,7 +131,7 @@ ul {
     box-shadow: 0 30px 50px rgba(0,0,0,.2);
   }
 }
-*/
+
 .overlay .moon-animation {
     animation: 2.75s linear 0s 1 moonAppears;
     animation-delay: 2s;
@@ -145,7 +145,7 @@ ul {
     align-items: center;
     z-index: 2;
 }
-/*
+
 @keyframes starsAppear {
   0% {
     opacity: 0;
@@ -156,7 +156,7 @@ ul {
     opacity: 1;
   }
 }
-*/
+
 .overlay .stars-appear  {
   animation: 2.50s linear 0s 1 starsAppear;
   animation-delay: 2.25s;
