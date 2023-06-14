@@ -313,12 +313,10 @@ audio:hover {
   .overlay .stars-appear  {
     display: none;
   }
-  .carousel {
-    display: block;
-  }
   audio {
     border: none;
     box-shadow: none;
+    margin-bottom: 20px;
   }
   
   .main-nav {  
