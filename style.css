@@ -294,6 +294,7 @@ audio:hover {
   .container,
   .container header {
     padding: 0px 40px 0px 40px;
+    position: relative;
     display: flex;
     flex-direction: column;
   }
