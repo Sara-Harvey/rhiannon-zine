@@ -301,11 +301,9 @@ audio:hover {
   .big-name-graphic {
     display: none;
   }
-
-  .carousel {
-  display: block;
-  }
-  
+  header .main-nav {
+    flex-direction: column;
+  }  
   .overlay {
     animation: 2.5s linear 0s 1 overlayDisappears;
   }
